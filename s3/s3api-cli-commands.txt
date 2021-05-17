@@ -1,0 +1,8 @@
+
+aws s3api list-objects --bucket 815497997234-aws-s3-exercise-1
+aws s3api get-object --bucket 815497997234-aws-s3-exercise-1 --key secret_document_1.pdf anoop.pdf
+aws s3api put-object --bucket 815497997234-aws-s3-exercise-1 --key secret_document_1.pdf --body secret_document_1.pdf
+aws s3api delete-object --bucket 815497997234-aws-s3-exercise-1 --key secret_document_1.pdf
+aws s3api get-object-acl --bucket 815497997234-aws-s3-exercise-1 --key secret_document_1.pdf
+aws s3api put-object-acl --bucket 815497997234-aws-s3-exercise-1 --key secret_document_1.pdf --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers
+
